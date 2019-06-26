@@ -1,0 +1,37 @@
+:root{
+    //fonts
+    --font-primary:'Nunito','sans-serif';
+    --font-secondary:'Josefin Sans','sans-serif';
+    //colors
+    --color-primary:#5d001E;
+    --color-secondary:#E3E2DF;
+    --color-tertiary:#E3AFBC;
+
+    --color-quaterny:#9A1750;
+    --color-quinary:#EE4C7C;
+    
+
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family:var(--font-primary);
+    font-weight: 300;
+    line-height: 1.6;
+    color:var(--color-primary);
+    
+    padding: 1rem;      //padding is here for testing purposes may be adjusted later
+}

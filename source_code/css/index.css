@@ -1,0 +1,58 @@
+:root {
+  --font-primary:'Nunito','sans-serif';
+  --font-secondary:'Josefin Sans','sans-serif';
+  --color-primary:#5d001E;
+  --color-secondary:#E3E2DF;
+  --color-tertiary:#E3AFBC;
+  --color-quaterny:#9A1750;
+  --color-quinary:#EE4C7C; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-primary);
+  padding: 1rem; }
+
+.footer {
+  background-color: var(--color-secondary);
+  grid-column: start / end; }
+
+.container {
+  display: grid;
+  grid-template-rows: 4vh min-content repeat(2, 40vw) repeat(3, min-content);
+  grid-template-columns: [start] 1fr repeat(9, [col-start] minmax(min-content, 13rem) [col-end]) 1fr [end]; }
+
+.header {
+  background-color: var(--color-primary);
+  grid-column: start/end; }
+
+.navigation {
+  grid-column: start/end; }
+
+.quality {
+  background-color: orange;
+  grid-column: col-start 1/col-end 9; }
+
+.foodtype {
+  background-color: orangered;
+  grid-column: col-start 1/col-end 9; }
+
+.reviews {
+  background-color: blue;
+  grid-column: col-start 1/col-end 9; }
+
+.features {
+  background-color: aqua;
+  grid-column: col-start 1/col-end 9; }

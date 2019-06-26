@@ -10,7 +10,9 @@
     "concat-bootstrap:css": "concat -o css/vendors/bootstrap/bootstrap.concat.css css/vendors/bootstrap/bootstrap-basics.css css/vendors/bootstrap/bootstrap-grid.css css/vendors/bootstrap/bootstrap-reboot.css",
     "prefix-bootstrap:css": "postcss --use autoprefixer -b \"last 10 versions\" css/vendors/bootstrap/bootstrap.concat.css -o css/vendors/bootstrap/bootstrap.prefix.css",
     "compress-bootstrap:css": "node-sass css/vendors/bootstrap/bootstrap.prefix.css css/bootstrap.css --output-style compressed",
-    "build-bootstrap:css": "npm-run-all compile-bootstrap-basics:sass compile-bootstrap-grid:sass compile-bootstrap-reboot:sass concat-bootstrap:css prefix-bootstrap:css compress-bootstrap:css"
+    "build-bootstrap:css": "npm-run-all compile-bootstrap-basics:sass compile-bootstrap-grid:sass compile-bootstrap-reboot:sass concat-bootstrap:css prefix-bootstrap:css compress-bootstrap:css",
+  
+    "compile-index-main:scss":"node-sass sass/index_main.scss css/index.css -w"
   },
   "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
   "license": "ISC",
