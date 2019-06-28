@@ -1,16 +1,113 @@
+.container > *:not(:last-child)
+{
+    grid-column: start/end ;
+}
+
+ 
+
 .quality{
-background-color: orange;
-grid-column: col-start 1/col-end 9;
+    // background-image: linear-gradient(to right,rgba(black,1),rgba(#5d001E,1));
+    //  background-image: linear-gradient(to right,rgba(black,1),rgba(black,1));
+    //  background-image: linear-gradient(to right,white,white);
+
+    &::before{
+        content: "\201C";
+        color: rgba(rgb(93, 0, 30),.3);
+        font-size: 18vw;
+        font-family: sans-serif;
+        position: absolute;
+        left: 2vw;
+        top: 95vh;
+    }
+
+
+    display: grid;
+    grid-template-columns:  [start] 1fr  repeat(2,[col-start] minmax(min-content,58.5rem ) [col-end] ) 1fr[end];
+    grid-template-rows: 1fr;
+    grid-row-gap: 1vw;
+    
+    padding: 6vw 0;
+  &__content{
+      
+      grid-column: col-start 1/col-end 1;
+      grid-row: 2/-1;
+      padding: 2vw;
+      display: flex;
+      flex-direction: column;
+
+      &>:first-child
+      {
+          margin-top: auto;
+      }
+      &>:last-child
+      {
+          margin-bottom: auto;
+      }
+      
+  }
+  &__picture-container{
+   
+    grid-column: col-start 2/col-end 2;
+   // padding: 10rem;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+   
+  }
+  &__heading{
+     
+      grid-column: col-start 1/col-end 2;
+  }
+
+  &__pictures{
+
+    box-shadow: 0 1.5rem 4rem rgba(black,.4);
+    outline-offset: 1vw;
+    width: 100%;
+    border-radius: 2px;
+    transition: all .2s;
+    
+    
+    &:hover{
+        outline: 1.5rem solid var(--color-primary);
+        transform: scale(1.05);
+        box-shadow: 0 1.5rem 4rem rgba(black,.7);
+        z-index: 20;
+    }
+
+    &--p1
+    {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+     
+    }
+  
+    
+  }
+
 }
 .foodtype{
 background-color: orangered;
-grid-column: col-start 1/col-end 9;
+
+
+&__content{
+    
+}
 }
 .reviews{
 background-color: blue;
-grid-column: col-start 1/col-end 9;
+
+
+&__content{
+    
+}
 }
 .features{
     background-color: aqua;
-    grid-column: col-start 1/col-end 9;
+
+    
+    &__content{
+    
+    }
 }

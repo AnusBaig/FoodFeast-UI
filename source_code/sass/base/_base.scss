@@ -2,6 +2,7 @@
     //fonts
     --font-primary:'Nunito','sans-serif';
     --font-secondary:'Josefin Sans','sans-serif';
+    --font-tertairy:'Oswald','sans-serif';
     //colors
     --color-primary:#5d001E;
     --color-secondary:#E3E2DF;
@@ -10,6 +11,7 @@
     --color-quaterny:#9A1750;
     --color-quinary:#EE4C7C;
     
+   
 
 }
 
@@ -32,6 +34,8 @@ body{
     font-weight: 300;
     line-height: 1.6;
     color:var(--color-primary);
+    background-color: var(--color-secondary);
+   
     
-    padding: 1rem;      //padding is here for testing purposes may be adjusted later
+   // padding: 1rem;      //padding is here for testing purposes may be adjusted later
 }

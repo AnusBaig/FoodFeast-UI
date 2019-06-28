@@ -1,6 +1,7 @@
 :root {
   --font-primary:'Nunito','sans-serif';
   --font-secondary:'Josefin Sans','sans-serif';
+  --font-tertairy:'Oswald','sans-serif';
   --color-primary:#5d001E;
   --color-secondary:#E3E2DF;
   --color-tertiary:#E3AFBC;
@@ -23,7 +24,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: var(--color-primary);
-  padding: 1rem; }
+  background-color: var(--color-secondary); }
 
 .u-vertical-center {
   position: absolute;
@@ -36,41 +37,12 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 1rem; }
 
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; }
-  .background-video__content {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-
-.footer {
-  background-color: var(--color-secondary);
-  grid-column: start / end; }
-
-.container {
-  display: grid;
-  grid-template-rows: min-content 85vh repeat(2, 40vw) repeat(3, min-content);
-  grid-template-columns: [start] 1fr repeat(9, [col-start] minmax(min-content, 13rem) [col-end]) 1fr [end]; }
-
-.header {
-  position: relative;
-  grid-column: start/end;
-  height: 100%; }
-  .header__text-box {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(93, 0, 30, 0.5));
-    height: 100%; }
-
 .heading-primary {
   display: block;
   font-size: 6rem;
   text-transform: uppercase;
   font-family: var(--font-primary);
-  font-weight: 400; }
+  font-weight: 300; }
   .heading-primary--responsive {
     font-size: 3.5vw; }
   .heading-primary--white {
@@ -92,6 +64,56 @@ body {
       background-color: #5d001e;
       left: 0;
       transition: all .2s ease-out; }
+
+.heading-secondary {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  color: var(--color-secondary); }
+  .heading-secondary--responsive {
+    font-size: 2.5vw; }
+
+.heading-tertiary {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: var(--font-secondary); }
+  .heading-tertiary--responsive {
+    font-size: 2vw; }
+
+.paragraph {
+  font-size: 1vw; }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  .background-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.footer {
+  background-color: var(--color-secondary);
+  grid-column: start / end; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 91vh repeat(2, 50vw) repeat(3, min-content);
+  grid-template-columns: [start] 1fr repeat(9, [col-start] minmax(min-content, 13rem) [col-end]) 1fr [end]; }
+
+.header {
+  position: relative;
+  grid-column: start/end;
+  height: 100%; }
+  .header__text-box {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    height: 100%; }
 
 .navigation {
   grid-column: start/end; }
@@ -134,18 +156,61 @@ body {
     left: 0;
     width: 100%; }
 
+.container > *:not(:last-child) {
+  grid-column: start/end; }
+
 .quality {
-  background-color: orange;
-  grid-column: col-start 1/col-end 9; }
+  display: grid;
+  grid-template-columns: [start] 1fr repeat(2, [col-start] minmax(min-content, 58.5rem) [col-end]) 1fr [end];
+  grid-template-rows: 1fr;
+  grid-row-gap: 1vw;
+  padding: 6vw 0; }
+  .quality::before {
+    content: "\201C";
+    color: rgba(93, 0, 30, 0.3);
+    font-size: 18vw;
+    font-family: sans-serif;
+    position: absolute;
+    left: 2vw;
+    top: 95vh; }
+  .quality__content {
+    grid-column: col-start 1/col-end 1;
+    grid-row: 2/-1;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column; }
+    .quality__content > :first-child {
+      margin-top: auto; }
+    .quality__content > :last-child {
+      margin-bottom: auto; }
+  .quality__picture-container {
+    grid-column: col-start 2/col-end 2;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .quality__heading {
+    grid-column: col-start 1/col-end 2; }
+  .quality__pictures {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    outline-offset: 1vw;
+    width: 100%;
+    border-radius: 2px;
+    transition: all .2s; }
+    .quality__pictures:hover {
+      outline: 1.5rem solid var(--color-primary);
+      transform: scale(1.05);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7);
+      z-index: 20; }
+    .quality__pictures--p1 {
+      grid-column: 1/-1;
+      grid-row: 1/-1; }
 
 .foodtype {
-  background-color: orangered;
-  grid-column: col-start 1/col-end 9; }
+  background-color: orangered; }
 
 .reviews {
-  background-color: blue;
-  grid-column: col-start 1/col-end 9; }
+  background-color: blue; }
 
 .features {
-  background-color: aqua;
-  grid-column: col-start 1/col-end 9; }
+  background-color: aqua; }
