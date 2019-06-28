@@ -1,0 +1,16 @@
+.u-vertical-center
+{
+    //parent needs to be absolute
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.u-center-inline
+{
+    text-align: center;
+}
+.u-margin-bottom-medium{
+    margin-bottom: 1rem;
+}
