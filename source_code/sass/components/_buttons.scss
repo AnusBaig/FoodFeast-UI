@@ -1,0 +1,9 @@
+.btn-outline-reddish{
+    color: var(--color-quaterny) !important;
+    border: 2px solid var(--color-quaterny) !important;
+
+    &:hover{
+        color: white !important;
+        background-color: var(--color-quaterny);
+    }
+}

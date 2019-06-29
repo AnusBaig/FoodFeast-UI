@@ -1,0 +1,88 @@
+.authenticate{
+    width: 50vw;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+
+    &__login{
+        &-card{
+            @media screen and (max-width: 576px) {
+                //border: none !important;
+                box-shadow: 0 0 0 white !important;
+            }
+        }
+    }
+
+    &__control{
+        position: relative;
+        color: gray;
+
+        &--text{
+            border: none !important;
+            box-shadow: none !important;
+            font-family: inherit;
+
+            &::placeholder{
+                font-weight: bold;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                top: 100%;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: red;
+            }
+
+            &:focus{
+                color: black;
+                font-weight: bold;
+            }
+
+            &:focus:invalid{
+            }
+
+            &:focus:valid{
+            }
+        }
+    
+        &--icon , --icon{
+            color: currentColor !important;
+        }
+
+        &__button{
+            border-radius: 50% !important;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: gray;
+        }
+
+    }
+}
+
+.social-icon-{
+
+    &f , &g{
+        border: .2rem solid;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    &f{
+        color:  #4267b2 !important;
+    }
+
+    &g{
+        color: #db3236 !important;
+        margin-right: 1.5rem;
+    }
+}

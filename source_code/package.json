@@ -1,26 +1,38 @@
 {
-  "name": "food-feast",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "compile-bootstrap-basics:sass": "node-sass sass/vendors/bootstrap/bootstrap.scss css/vendors/bootstrap/bootstrap-basics.css",
-    "compile-bootstrap-grid:sass": "node-sass sass/vendors/bootstrap/bootstrap-grid.scss css/vendors/bootstrap/bootstrap-grid.css",
-    "compile-bootstrap-reboot:sass": "node-sass sass/vendors/bootstrap/bootstrap-reboot.scss css/vendors/bootstrap/bootstrap-reboot.css",
-    "concat-bootstrap:css": "concat -o css/vendors/bootstrap/bootstrap.concat.css css/vendors/bootstrap/bootstrap-basics.css css/vendors/bootstrap/bootstrap-grid.css css/vendors/bootstrap/bootstrap-reboot.css",
-    "prefix-bootstrap:css": "postcss --use autoprefixer -b \"last 10 versions\" css/vendors/bootstrap/bootstrap.concat.css -o css/vendors/bootstrap/bootstrap.prefix.css",
-    "compress-bootstrap:css": "node-sass css/vendors/bootstrap/bootstrap.prefix.css css/bootstrap.css --output-style compressed",
-    "build-bootstrap:css": "npm-run-all compile-bootstrap-basics:sass compile-bootstrap-grid:sass compile-bootstrap-reboot:sass concat-bootstrap:css prefix-bootstrap:css compress-bootstrap:css",
-  
-    "compile-index-main:scss":"node-sass sass/index_main.scss css/index.css -w"
-  },
-  "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.12.0",
-    "autoprefixer": "^9.5.1",
-    "concat": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.2"
-  }
+    "name": "food-feast",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile-bootstrap-basics:sass": "node-sass sass/vendors/bootstrap/bootstrap.scss css/vendors/bootstrap/bootstrap-basics.css",
+        "compile-bootstrap-grid:sass": "node-sass sass/vendors/bootstrap/bootstrap-grid.scss css/vendors/bootstrap/bootstrap-grid.css",
+        "compile-bootstrap-reboot:sass": "node-sass sass/vendors/bootstrap/bootstrap-reboot.scss css/vendors/bootstrap/bootstrap-reboot.css",
+        "concat-bootstrap:css": "concat -o css/vendors/bootstrap/bootstrap.concat.css css/vendors/bootstrap/bootstrap-basics.css css/vendors/bootstrap/bootstrap-grid.css css/vendors/bootstrap/bootstrap-reboot.css",
+        "prefix-bootstrap:css": "postcss --use autoprefixer -b \"last 10 versions\" css/vendors/bootstrap/bootstrap.concat.css -o css/vendors/bootstrap/bootstrap.prefix.css",
+        "compress-bootstrap:css": "node-sass css/vendors/bootstrap/bootstrap.prefix.css css/bootstrap.css --output-style compressed",
+        "build-bootstrap:css": "npm-run-all compile-bootstrap-basics:sass compile-bootstrap-grid:sass compile-bootstrap-reboot:sass concat-bootstrap:css prefix-bootstrap:css compress-bootstrap:css",
+        
+        "compile-index-main:scss": "node-sass sass/index_main.scss css/index.css -w",
+        
+        "watch-contact-main:scss": "node-sass sass/contact_main.scss css/contact.css -w",
+        "compile-contact-main:scss": "node-sass sass/contact_main.scss css/contact.css",
+        
+        "watch-login-main:scss": "node-sass sass/login_main.scss css/login.css -w",
+        "compile-login-main:scss": "node-sass sass/login_main.scss css/login.css",
+        
+        "watch-signup-main:scss": "node-sass sass/signup_main.scss css/signup.css -w",
+        "compile-signup-main:scss": "node-sass sass/signup_main.scss css/signup.css",
+        
+        "watch-about-main:scss": "node-sass sass/about_main.scss css/about.css -w",
+        "compile-about-main:scss": "node-sass sass/about_main.scss css/about.css"
+    },
+    "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.12.0",
+        "autoprefixer": "^9.5.1",
+        "concat": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^6.1.2"
+    }
 }

@@ -1,0 +1,72 @@
+@mixin respond($device){
+
+    @if($device==desktop-large)
+    {
+        @media only screen and (max-width:112.5em)
+        {
+            @content;
+        }
+    }
+
+    @if($device==desktop)
+    {
+        @media only screen and (max-width:93.75em)
+        {
+            @content;
+        }
+    }
+
+    @if($device==tab-land)
+    {
+        @media only screen and (max-width:75em)   //1200px
+        {
+            @content;
+        }
+    }
+
+    @if($device==tab-port)
+    {
+        @media only screen and (max-width:56.25em)  //900px
+        {
+            @content;
+        }
+    }
+
+    @if($device==tab-port-small)
+    {
+        @media only screen and (max-width:47.5em)
+        {
+            @content;
+        }
+    }
+
+    @if($device==mobile-large)
+    {
+        @media only screen and (max-width:37.5em)
+        {
+            @content;
+        }
+    }
+
+    @if($device==mobile)
+    {
+        @media only screen and (max-width:18.75em)
+        {
+            @content;
+        }
+    }
+
+    @if($device==mobile-small)
+    {
+        @media only screen and (max-width:15.62em)
+        {
+            @content;
+        }
+    }
+}
+
+@mixin respondOnTouch{
+    @media screen and (hover:none) {
+        @content;
+    }
+}
