@@ -1,0 +1,21 @@
+html{
+    @include respond(desktop-large){
+        font-size: 95% !important;
+    }
+
+    @include respond(desktop){
+        font-size: 90% !important;
+    }
+
+    @include respond(tab-land){
+        font-size: 80% !important;
+    }
+
+    @include respond(tab-port){
+        font-size: 70% !important;
+    }
+
+    @include respond(mobile){
+        font-size: 62.5% !important;
+    }
+}

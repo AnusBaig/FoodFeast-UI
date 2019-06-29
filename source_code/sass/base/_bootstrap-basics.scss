@@ -1,0 +1,22 @@
+.dropdown{
+    &-menu{
+        width: 100%;
+    }
+
+    &-item{
+        &:hover{
+            background-color: var(--color-secondary) !important;
+            cursor: pointer;
+        }
+    }
+}
+
+.font-{
+    &primary{
+        font-family: var(--font-primary) !important;
+    }
+
+    &secondary{
+        font-family: var(--font-secondary) !important;
+    }
+}
