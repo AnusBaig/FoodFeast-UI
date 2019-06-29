@@ -1,0 +1,46 @@
+.form-control{
+    font-size: 1.1rem !important;
+    font-family: inherit;
+    color: black !important;
+    
+    &::-webkit-input-placeholder{
+    font-weight: bold;
+    }
+
+    &:focus:invalid{
+        box-shadow: 0 0 7px var(--color-quaterny) !important;
+    }
+}
+.contact{
+    @media screen and (max-width:768px) {
+        &__form{
+            order: 1;
+            text-align: center;
+        }
+    
+        &__info{
+            order: 0;
+        }
+
+    }
+
+
+    &__form , &__info{
+        border-radius: .4rem;
+    }
+
+    &__info{
+        .fas , .fab{
+            color:var(--color-primary);
+        
+            &+ h6{
+                color: var(--color-primary);
+            }
+        }
+
+        a{
+        color:black;
+        }
+    }
+}
+
