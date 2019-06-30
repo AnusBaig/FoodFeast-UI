@@ -52,12 +52,22 @@
     font-family: var(--font-secondary);
     font-weight: 300;
 
-    color: var(--color-secondary);
+    color: var(--color-primary);
+
+    &--white{
+        color: var(--color-secondary);
+    }
 
     &--responsive
     {
         font-size: 2.5vw;
     }
+    &--heavy{
+        font-size: 3vw;
+        font-family: var(--font-tertiary);
+        color: var(--color-quaterny);
+    }
+   
 }
 .heading-tertiary
 {
@@ -70,8 +80,29 @@
     &--responsive{
         font-size: 2vw;
     }
+    &--white{
+        color: var(--color-secondary);
+    }
 }
+
+.heading-quaterny{
+    font-size: 1.9rem;
+    font-family: var(--font-secondary);
+    color: var(--color-quaterny);
+}
+
 .paragraph
 {
     font-size: 1vw;
+  color: var(--color-primary);
+  
+  &--white{
+    color: var(--color-secondary);
+
+    
+}
+&--heavy{
+    font-size: 1.5vw;
+    color: (--color-quinary);
+}
 }

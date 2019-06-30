@@ -88,26 +88,234 @@
 
 }
 .foodtype{
-background-color: orangered;
+background-color: var(--color-primary);
+display: grid;
+grid-template-columns: [start] 1fr repeat(2, [col-start] minmax(min-content, 58.5rem) [col-end]) 1fr [end];
+grid-template-rows:min-content 1fr;
+grid-row-gap: 6vw;
+grid-column-gap: 2vw;
+padding: 2vw 0;
+clip-path: polygon(86% 13%, 100% 0, 100% 100%, 0px 100%, 0 31%, 8% 13%);
+margin-top: -5vw;
+position: relative;
 
+&__Before{
 
-&__content{
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+ //   background-image: linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9));
+    padding: 1vw;
+    &-Desi{
+
+        grid-column: 3/4;
+        grid-row: 2/-1;
+        
+    }
+
+    &-BBQ{
+
+        grid-column: 2/3;
+        grid-row: 2/-1;
+
+    }
+    &-Fast{
+
+        grid-column: 1/2;
+        grid-row: 2/-1;
+        display: none;
+    }
+    &-Chinese{
+
+        grid-column: 4/5;
+        grid-row: 2/-1;
+        display: none;
+    }
 }
+
+
+
+    &__BBQ{
+        
+        grid-column: 2/3;
+        grid-row: 2/-1;
+       background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook1.jpg) ;
+       background-position: top;
+       background-size: cover;
+       box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
+
+      
+       
+       
+    }
+    &__Desi{
+        
+        grid-column: 3/4;
+        grid-row: 2/-1;
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-position: top;
+        background-size: cover;
+        box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
+        
+
+        
+    }
+    &__Fast{
+        
+        grid-column: 1/2;
+        grid-row: 2/-1;
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-position: top;
+        background-size: cover;
+        box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
+        
+
+        
+    }
+    &__Chinese{
+        
+        grid-column: 4/5;
+        grid-row: 2/-1;
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-position: top;
+        background-size: cover;
+        box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
+        
+
+        
+    }
+
+    &__header{
+        margin-top: 7vw;
+        grid-column: 1/-1;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        &>p{
+            width: 75%;
+            text-align: center;
+        }
+    }
+
 }
 .reviews{
 background-color: blue;
 
+background-image: linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+background-position: top;
+background-size: cover;
+background-attachment: fixed;
 
-&__content{
+&__heading{
+    text-align: center;
+    padding: 4vw 0;
+    
     
 }
-}
-.features{
-    background-color: aqua;
 
-    
-    &__content{
-    
+&__container{
+    width: 50%;
+    margin: 0 auto;
+  background-color: rgba(#ffffff,.7);
+  padding: 4vw;
+  border-radius: 2px;
+  box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
+  color: #777;
+    margin-bottom: 5vw;
+    transform: skew(-10deg);
+    transition: all .4s;
+
+    & *{
+        transform: skew(10deg);
     }
+    &:hover{
+        
+        color: var(--color-primary);
+        
+        &>*{
+            color: var(--color-primary)
+        }
+    }
+}
+&__reviewheading{
+    color: #777;
+}
+&__text{
+  
+    color: #777;
+
+}
+&__date{
+
+}
+
+}
+.features.features{
+    padding: 3vw 0;
+    padding-bottom: 5vw;
+    grid-column: col-start 1/col-end 9;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    
+    
+}
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+    align-items: center;
+
+    &__icon{
+        width: 4.5rem;
+        height: 4.5rem;
+        fill: var(--color-quaterny);
+    }
+    &__paragraph{
+        grid-column: 2/-1;
+
+    }
+}
+
+.features__header{
+grid-column: 1/-1;
+text-align: center;
+
+}
+.leftslider{
+position: absolute;
+z-index: 100;
+left: -1.2%;
+top: 64%;
+fill: var(--color-primary);
+height: 7.0vw;
+width: 7.0vw;
+box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+cursor: pointer;
+&:hover{
+    fill: var(--color-secondary);
+    background-color: var(--color-primary);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,1);
+}
+
+}
+.rightslider{
+    position: absolute;
+    z-index: 100;
+    left: 94.2%;
+    top: 64%;
+    fill: var(--color-primary);
+    height: 7.1vw;
+    width: 7.1vw;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+    cursor: pointer;
+    &:hover{
+        fill: var(--color-secondary);
+        background-color: var(--color-primary);
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0,1);
+    } 
 }
