@@ -101,6 +101,12 @@ position: relative;
 
 &__Before{
 
+    &:hover button{
+       
+        transform: translate(0);
+        display: block;
+    }
+    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -121,7 +127,7 @@ position: relative;
 
     }
     &-Fast{
-
+        
         grid-column: 1/2;
         grid-row: 2/-1;
         display: none;
@@ -140,7 +146,7 @@ position: relative;
         
         grid-column: 2/3;
         grid-row: 2/-1;
-       background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook1.jpg) ;
+       background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg) ;
        background-position: top;
        background-size: cover;
        box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
@@ -153,7 +159,7 @@ position: relative;
         
         grid-column: 3/4;
         grid-row: 2/-1;
-        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/gallery5.jpg);
         background-position: top;
         background-size: cover;
         box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
@@ -165,7 +171,7 @@ position: relative;
         
         grid-column: 1/2;
         grid-row: 2/-1;
-        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/gallery8.jpg);
         background-position: top;
         background-size: cover;
         box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
@@ -177,7 +183,7 @@ position: relative;
         
         grid-column: 4/5;
         grid-row: 2/-1;
-        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook2.jpg);
+        background-image:linear-gradient(to right,rgba(#E3E2DF,.9),rgba(#E3E2DF,.9)), url(../media/images/cook1.jpg);
         background-position: top;
         background-size: cover;
         box-shadow: 0 1.4rem 4rem rgba(0,0,0,.6);
@@ -295,6 +301,7 @@ fill: var(--color-primary);
 height: 7.0vw;
 width: 7.0vw;
 box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+transition: all .3s;
 cursor: pointer;
 &:hover{
     fill: var(--color-secondary);
@@ -312,6 +319,7 @@ cursor: pointer;
     height: 7.1vw;
     width: 7.1vw;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+    transition: all .3s;
     cursor: pointer;
     &:hover{
         fill: var(--color-secondary);

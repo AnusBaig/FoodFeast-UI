@@ -7,3 +7,41 @@
         background-color: var(--color-quaterny);
     }
 }
+.btn-order{
+   align-self: center;
+   border: none;
+   background-color: var(--color-quaterny);
+   border-radius: 0;
+   font-family: var(--font-tertiary);
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   padding: 1.6rem 4rem;
+   margin-top: 5rem;
+   cursor: pointer;
+   transition: all .2s;
+   color: var(--color-secondary);
+    
+
+   &:hover{
+    background-color: var(--color-quinary);
+   }
+  
+}
+.btn-read{
+
+    align-self: center;
+   border: none;
+   background-color: var(--color-quaterny);
+   border-radius: 0;
+   font-family: var(--font-tertiary);
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   padding: 1.6rem 4rem;
+   margin-top: 2rem;
+   cursor: pointer;
+   transition: all .2s;
+   color: var(--color-secondary);
+   &:hover{
+    background-color: var(--color-quinary);
+   }
+}
