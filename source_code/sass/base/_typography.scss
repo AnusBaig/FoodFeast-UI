@@ -75,3 +75,45 @@
 {
     font-size: 1vw;
 }
+
+.font-{
+    &primary{
+        font-family: var(--font-primary) !important;
+    }
+
+    &secondary{
+        font-family: var(--font-secondary) !important;
+    }
+
+    &tertairy{
+        font-family: var(--font-tertairy) !important;
+    }
+
+    &quaterny{
+        font-family: var(--font-quaterny) !important;
+    }
+}
+
+.text{
+    &_primary{
+        color: var(--color-primary) !important;
+    }
+
+    &_secondary{
+        color: var(--color-secondary) !important;
+    }
+
+    &_tertiary{
+        color: var(--color-tertiary) !important;
+    }
+
+    &_quaterny{
+        color: var(--color-quaterny) !important;
+    }
+    
+}
+
+.dark-overlay
+{
+filter: brightness(65%);
+}

@@ -3,6 +3,8 @@
     --font-primary:'Nunito','sans-serif';
     --font-secondary:'Josefin Sans','sans-serif';
     --font-tertairy:'Oswald','sans-serif';
+    
+    --font-quaterny:'Russo One', 'sans-serif';
     //colors
     --color-primary:#5d001E;
     --color-secondary:#E3E2DF;
@@ -10,11 +12,7 @@
 
     --color-quaterny:#9A1750;
     --color-quinary:#EE4C7C;
-    
-   
-
 }
-
 
 *,
 *::after,
@@ -38,4 +36,9 @@ body{
    
     
    // padding: 1rem;      //padding is here for testing purposes may be adjusted later
+}
+
+::selection{
+    color: var(--color-secondary);
+    background-color: var(--color-quinary);
 }
