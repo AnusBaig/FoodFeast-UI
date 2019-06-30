@@ -2,6 +2,7 @@
   --font-primary:'Nunito','sans-serif';
   --font-secondary:'Josefin Sans','sans-serif';
   --font-tertairy:'Oswald','sans-serif';
+  --font-quaterny:'Russo One', 'sans-serif';
   --color-primary:#5d001E;
   --color-secondary:#E3E2DF;
   --color-tertiary:#E3AFBC;
@@ -28,11 +29,11 @@ body {
 
 @media only screen and (max-width: 112.5em) {
   html {
-    font-size: 95% !important; } }
+    font-size: 100% !important; } }
 
 @media only screen and (max-width: 93.75em) {
   html {
-    font-size: 90% !important; } }
+    font-size: 95% !important; } }
 
 @media only screen and (max-width: 75em) {
   html {
@@ -53,12 +54,6 @@ body {
   background-color: var(--color-secondary) !important;
   cursor: pointer; }
 
-.font-primary {
-  font-family: var(--font-primary) !important; }
-
-.font-secondary {
-  font-family: var(--font-secondary) !important; }
-
 .header {
   position: relative;
   grid-column: start/end;
@@ -72,8 +67,7 @@ body {
     background-size: cover; }
 
 .navigation {
-  grid-column: start/end;
-  font-size: 62.5% !important; }
+  grid-column: start/end; }
 
 .head-nav {
   display: flex;
