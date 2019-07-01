@@ -27,6 +27,10 @@ body {
   color: var(--color-primary);
   background-color: var(--color-secondary); }
 
+::selection {
+  color: var(--color-secondary);
+  background-color: var(--color-quinary); }
+
 @media only screen and (max-width: 112.5em) {
   html {
     font-size: 100% !important; } }
@@ -53,6 +57,13 @@ body {
 .dropdown-item:hover {
   background-color: var(--color-secondary) !important;
   cursor: pointer; }
+
+p {
+  font-size: 1.2rem !important; }
+
+body {
+  color: #212529 !important;
+  background-color: white !important; }
 
 .header {
   position: relative;

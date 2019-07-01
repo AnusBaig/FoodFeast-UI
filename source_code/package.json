@@ -24,7 +24,10 @@
         "compile-signup-main:scss": "node-sass sass/signup_main.scss css/signup.css",
         
         "watch-about-main:scss": "node-sass sass/about_main.scss css/about.css -w",
-        "compile-about-main:scss": "node-sass sass/about_main.scss css/about.css"
+        "compile-about-main:scss": "node-sass sass/about_main.scss css/about.css",
+
+        "watch-menu-main:scss": "node-sass sass/menu_main.scss css/menu.css -w",
+        "compile-menu-main:scss": "node-sass sass/menu_main.scss css/menu.css"
     },
     "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
     "license": "ISC",
