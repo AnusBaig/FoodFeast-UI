@@ -137,6 +137,10 @@ body {
 p {
   font-size: 1.2rem !important; }
 
+body {
+  color: #212529 !important;
+  background-color: white !important; }
+
 .header {
   position: relative;
   grid-column: start/end;
