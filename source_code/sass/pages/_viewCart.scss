@@ -1,0 +1,35 @@
+.cart{
+
+    &-head{
+        font-size: 1.1rem;
+        letter-spacing: 1px;;
+    }
+
+    &__item{
+        vertical-align: middle;
+        border-bottom: 2px solid lightgray;
+    }
+
+    &-quantity{
+
+        &__btn{
+
+        }
+
+        &__menu{
+            overflow-y: scroll;
+            max-height: 10rem;
+
+        }
+
+        &__item{
+        }
+    }
+
+    &-remove{
+
+        &__icon{
+                cursor: pointer;
+        }
+    }
+}
