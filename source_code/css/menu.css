@@ -1,4 +1,5 @@
 .dropdown-menu {
+  padding: 0 !important;
   width: 100%; }
 
 .dropdown-item:hover {
@@ -34,7 +35,9 @@
   --color-secondary:#E3E2DF;
   --color-tertiary:#E3AFBC;
   --color-quaterny:#9A1750;
-  --color-quinary:#EE4C7C; }
+  --color-quinary:#EE4C7C;
+  --color-gray-light: hsla(0, 0, 0, 0.075);
+  --color-gray-dark: #bfbeb7; }
 
 *,
 *::after,
