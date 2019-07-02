@@ -5,9 +5,12 @@
   --font-quaterny:'Russo One', 'sans-serif';
   --color-primary:#5d001E;
   --color-secondary:#E3E2DF;
-  --color-tertiary:#E3AFBC;
+  --color-secondary-1:#ebeae6
+    --color-tertiary:#E3AFBC;
   --color-quaterny:#9A1750;
-  --color-quinary:#EE4C7C; }
+  --color-quinary:#EE4C7C;
+  --color-gray-light:rgba(226, 226, 226, 0.986);
+  --color-gray-dark: #bfbeb7; }
 
 *,
 *::after,
@@ -52,6 +55,7 @@ body {
     font-size: 62.5% !important; } }
 
 .dropdown-menu {
+  padding: 0 !important;
   width: 100%; }
 
 .dropdown-item:hover {
@@ -138,6 +142,38 @@ body {
     color: white !important;
     background-color: var(--color-quaterny); }
 
+.btn-order {
+  align-self: center;
+  border: none;
+  background-color: var(--color-quaterny);
+  border-radius: 0;
+  font-family: var(--font-tertiary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.6rem 4rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--color-secondary); }
+  .btn-order:hover {
+    background-color: var(--color-quinary); }
+
+.btn-read {
+  align-self: center;
+  border: none;
+  background-color: var(--color-quaterny);
+  border-radius: 0;
+  font-family: var(--font-tertiary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.6rem 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--color-secondary); }
+  .btn-read:hover {
+    background-color: var(--color-quinary); }
+
 .form-control {
   font-size: 1.1rem !important;
   font-family: inherit;
@@ -145,7 +181,10 @@ body {
   .form-control::-webkit-input-placeholder {
     font-weight: bold; }
   .form-control:focus:invalid {
-    box-shadow: 0 0 7px var(--color-quaterny) !important; }
+    box-shadow: 0 0 6px var(--color-quaterny) !important; }
+  .form-control:focus:valid {
+    border-color: green !important;
+    box-shadow: 0 0 6px green !important; }
 
 @media screen and (max-width: 768px) {
   .contact__form {

@@ -8,7 +8,12 @@
     }
 
     &:focus:invalid{
-        box-shadow: 0 0 7px var(--color-quaterny) !important;
+        box-shadow: 0 0 6px var(--color-quaterny) !important;
+    }
+
+    &:focus:valid{
+        border-color: green !important;
+        box-shadow: 0 0 6px green !important;
     }
 }
 .contact{

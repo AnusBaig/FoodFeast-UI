@@ -30,7 +30,10 @@
         "compile-menu-main:scss": "node-sass sass/menu_main.scss css/menu.css",
 
         "watch-viewCart-main:scss": "node-sass sass/viewCart_main.scss css/viewCart.css -w",
-        "compile-viewCart-main:scss": "node-sass sass/viewCart_main.scss css/viewCart.css"
+        "compile-viewCart-main:scss": "node-sass sass/viewCart_main.scss css/viewCart.css",
+
+        "watch-checkout-main:scss": "node-sass sass/checkout_main.scss css/checkout.css -w",
+        "compile-checkout-main:scss": "node-sass sass/checkout_main.scss css/checkout.css"
     },
     "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
     "license": "ISC",

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/viewCart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="icon" href="media/Images/logo.jpg">
+    <title>Food Feast | Safe & healthy food</title>
+</head>
+<body class="">
+
+    <nav class="navigation">
+            <ul class="head-nav mb-0">
+        
+                <li class="head-nav__item">
+                    <a href="index.html" class="head-nav__link">
+                        <div class="head-nav__logo">
+                                <img class="head-nav__logo" src="./media/images/logo.jpg">
+                        </div>
+                        
+                    </a>
+                </li>
+        
+                <li class="head-nav__item">
+                        <a href="menu.html" class="head-nav__link">
+                            Menu
+                        </a>
+                </li>
+        
+                <li class="head-nav__item">
+                    
+                            <a href="viewCart.html" class="head-nav__link">
+                                Order
+                            </a>
+                </li>
+                
+                <li class="head-nav__item">
+                                <a href="#" class="head-nav__link">
+                                    Deals
+                                </a>
+                </li>
+        
+                <li class="head-nav__item">
+                        <a href="about.html" class="head-nav__link">
+                            About
+                        </a>
+                </li>
+        
+                <li class="head-nav__item">
+                        <a href="contact.html" class="head-nav__link">
+                            Contact us
+                        </a>
+                </li>
+        
+                <li class="head-nav__item">
+                        <a href="login.html" class="head-nav__link ">
+                        Login
+                        </a>
+                </li>
+        
+                <li class="head-nav__item">
+                        <a href="signup.html" class="head-nav__link">
+                        Sign UP
+                        </a>
+                </li>
+
+                <li class="head-nav__item-cart">
+                        <a href="viewCart.html" class="head-nav__link">
+                            <i class="fas fa-2x fa-shopping-cart"></i>
+                        </a>
+                </li>
+            </ul>
+    </nav>
+
+    <main class="checkout container p-5 my-5 text-center border rounded">
+        <table class="table table-hover bg-secondary text-capitalize   font-weight-bold">
+        <thead class="cart-head font-secondary bg-primary text-secondary ">
+            <tr>
+                <th colspan="2">Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody class="">
+            <tr class="cart__item">
+                <td colspan="2" class="cart-title ">Zinger burger</td>
+                <td class="cart-quantity">
+                    <div class="cart-quantity__select dropdown form-group d-inline-block text-center mb-0" id="select-type">
+                        <button class="cart-quantity__btn btn btn-sm btn-tertiary btn-block dropdown-toggle" data-toggle="dropdown">
+                            1 <span class="caret"></span>
+                        </button>
+                        <ul class="cart-quantity__menu dropdown-menu" id="quantity-menu">
+                            <li class="cart-quantity__item dropdown-item">1</li>
+                            <li class="cart-quantity__item dropdown-item">2</li>
+                            <li class="cart-quantity__item dropdown-item">3</li>
+                            <li class="cart-quantity__item dropdown-item">4</li>
+                            <li class="cart-quantity__item dropdown-item">5</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="cart-price">Rs. <span class="cart-quantity__price--value">615</span></td>
+                <td class="cart-remove">
+                    <i class="cart-remove__icon fas fa-minus-circle text_tertiary"></i>
+                </td>
+            </tr>
+
+            <tr class="cart__item">
+                <td colspan="2" class="cart-title ">Zinger burger</td>
+                <td class="cart-quantity">
+                    <div class="cart-quantity__select dropdown form-group d-inline-block text-center mb-0" id="select-type">
+                        <button class="cart-quantity__btn btn btn-tertiary btn-block btn-sm dropdown-toggle" data-toggle="dropdown">
+                            1 <span class="caret"></span>
+                        </button>
+                        <ul class="cart-quantity__menu dropdown-menu" id="quantity-menu">
+                            <li class="cart-quantity__item dropdown-item">1</li>
+                            <li class="cart-quantity__item dropdown-item">2</li>
+                            <li class="cart-quantity__item dropdown-item">3</li>
+                            <li class="cart-quantity__item dropdown-item">4</li>
+                            <li class="cart-quantity__item dropdown-item">5</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="cart-price">Rs. <span class="cart-quantity__price--value">615</span></td>
+                <td class="cart-remove">
+                    <i class="cart-remove__icon fas fa-minus-circle text_tertiary"></i>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot class="font-secondary">
+            <tr class="cart__item border-0">
+                <th colspan="2">Total Items <code>&nbsp;</code><span>5</span></th>
+                <th colspan="3">Sub-total <code>&nbsp;</code>Rs.<span> 800</span></th>
+            </tr>
+
+        </tfoot>
+        </table>
+
+        <form class="" method="post" action="">
+                
+                <div class=" form-group bg-secondary p-4 mt-5">
+                    <h2 class="font-secondary pb-2 text-capitalize">Billing Information</h2>
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="authenticate__control col-md-6 col-12 d-flex align-items-baseline form-group mb-4 ">
+                                <i class="authenticate__control--icon fas fa-building mx-2"></i>
+                                <input type="text" class="form-control authenticate__control--text" name="building" placeholder="Building" required>
+                            </div>
+                            <div class="authenticate__control col-md-6 col-12 d-flex align-items-baseline form-group mb-4 ">
+                                <i class="authenticate__control--icon fas fa-street-view mx-2"></i>
+                                <input type="text" class="form-control authenticate__control--text" name="street" placeholder="Street" required>
+                            </div>
+                            <div class="authenticate__control col-md-6 col-12 d-flex align-items-baseline form-group  mb-4 ">
+                                <i class="authenticate__control--icon fas fa-chart-area mx-2"></i>
+                                <input type="text" class="form-control authenticate__control--text" name="email" placeholder="Area" required>
+                            </div>
+                            <div class="authenticate__control col-md-6 col-12 d-flex align-items-baseline form-group mb-4 ">
+                                <i class="authenticate__control--icon fas fa-address-card mx-2"></i>
+                                <input type="password" class="form-control authenticate__control--text" name="password" placeholder="(Optional)Floor / Unit#" >
+                            </div>
+                            <div class="authenticate__control col-md-6 col-12 d-flex align-items-baseline form-group mb-4 ">
+                                <i class="authenticate__control--icon fas fa-phone mx-2"></i>
+                                <input type="phone" class="form-control authenticate__control--text" name="phone" placeholder="Phone number" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group bg-secondary d-flex justify-content-around  px-auto py-4 mt-5">
+                    <h4 class="font-tertairy text-capitalize">Payment Method</h4>
+                    <div class="dropdown form-group" id="select-type">
+                        <button class="btn btn-tertiary btn-block dropdown-toggle" data-toggle="dropdown" >
+                            Select payment method <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="type-menu">
+                            <li class="dropdown-item">Cash on delivery</li>
+                            <li class="dropdown-item">Pay with card</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="px-auto py-3 mt-3">
+                    <button class="btn btn-danger text-uppercase authenticate__control--button px-5 my-3">Confirm Order</button>
+                </div>
+        </form>
+    </main>
+
+    <script src="script/viewCart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
